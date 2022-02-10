@@ -43,6 +43,8 @@ form{
     display: block;
 }
 .areaAt{
+    margin: auto;
+    padding: 0px 3px;
     min-width: 100%
 }
 
