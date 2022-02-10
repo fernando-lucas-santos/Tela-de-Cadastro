@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>formulario</title>
+</head>
+<body>
+
+    <header>
+        <h1>Cadastros de Devs</h1>
+        <p>Preencha os campos a baixo corretamente</p>
+    </header>
+
+    <!--
+        fieldset é um agrupador de campos
+        input é um obejeto de varias coisas
+    -->
+    <form action="">
+        <fieldset> <legend>Dados do Usuário</legend>
+            <div class= "dados">
+                <!-- type é o tipo de caixa name é o nome do objeto e id é o identificador-->
+                <label> 
+                    Nome: <input type="text" nome="nome" id="nome" placeholder="Nome" size="20" maxlength="30"> 
+                </label>  
+                </label>
+                <label>
+                    Sobrenome: <input type="text" nome="Sobrenome" id="sobreN" placeholder="Sobrenome">
+                </label>
+                <label>
+                     Email: <input type="email" nome="email" id="email" placeholder="exemple@email.com">
+                </label>
+            </div>
+        </fieldset>
+
+        <section class="areaAt">
+            <p> Qual é sua área de desenvolvimento </p>
+            <label>
+                <input type="radio" name="dev-web" id="frontend" checked> Front-end
+            </label>
+            <label>
+                <input type="radio" name="dev-web" value="back-end"> Back-end
+            </label>
+            <label>
+                <input type="radio" name="dev-web" valeu="fullstack"> Fullstack
+            </label>
+        </section>
+
+        <section class="senioridade">
+            <p>Senioridade</p>
+            <select name="" id="">
+                <option selected disabled value=""> Selecionar</option>
+                <option value="Junior">Junior</option>
+                <option value="Pleno">Pleno</option>
+                <option value="Pleno">Senior</option>
+            </select>
+        </section>
+
+        <section class="chek">
+            <fieldset> <legend>Quais Linguagens você tem conhecimento?</legend>
+                <label> <input type="checkbox" name="tecnologia" id="tecnologia"> HTML</label>  <br>
+                <label> <input type="checkbox" name="tecnologia" id="tecnologia"> CSS</label>   <br>
+                <label> <input type="checkbox" name="tecnologia" id="tecnologia"> Java script</label>   <br>
+                <label> <input type="checkbox" name="tecnologia" id="tecnologia"> React</label> <br>
+                <label> <input type="checkbox" name="tecnologia" id="tecnologia"> PHP</label>   <br>
+                <label> <input type="checkbox" name="tecnologia" id="tecnologia"> Node js</label> 
+            </fieldset>
+        </section>
+
+        <section class="infoAdd">
+            <p>Informações adicionais:</p>
+            <section>
+                <textarea name="" id="" cols="30" rows="3" maxlength="20"></textarea>
+                <input type="submit" value="enviar">
+            </section>
+        </section>
+    </form>
+</body>
+</html>
