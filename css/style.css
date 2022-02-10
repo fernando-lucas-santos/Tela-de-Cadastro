@@ -42,6 +42,9 @@ form{
 .dados > label{
     display: block;
 }
+.areaAt{
+    max-width: 100%;
+}
 
 .senioridade > p{
     margin: 0px;
